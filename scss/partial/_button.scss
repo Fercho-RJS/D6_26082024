@@ -1,0 +1,19 @@
+/* Acá puedo reemplazarlo por las propiedades de bootstrap de la clase 'btn btn-....'. */
+.boton {
+    background-color: map-get($colores-pagina, "secundario");
+    color: map-get($colores-neutros, "blanco" );
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}

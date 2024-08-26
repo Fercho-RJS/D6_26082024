@@ -1,0 +1,42 @@
+html
+{
+    //Hack para el box-model
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+
+*
+{
+    //Hack para el box-model
+    box-sizing: none; 
+    
+    &::before
+    {
+        //Hack para el box-model
+        box-sizing: none;
+    }
+
+    &::after
+    {
+        //Hack para el box-model
+        box-sizing: none;
+    }
+}
+
+body
+{
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Raleway', sans-serif;
+    color: map-get($colores-neutros, "negro");
+    background-color: map-get($colores-pagina, "principal");
+    /* background-image: linear-gradient(to top, #ffffff 0%, #cfd9df 100%); */
+}
+
+// Acá puedo usar la clase 'container' de bootstrap en reemplazo.
+.contenedor
+{
+    max-width: 120rem;
+    margin: 0 auto;
+}

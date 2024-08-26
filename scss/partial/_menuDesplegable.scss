@@ -1,0 +1,92 @@
+/* MENU DESPLEGABLE */
+.navegacionPrincipal 
+{
+    width: 80%;
+    margin: 2rem auto;
+    list-style-type: none; 
+    text-align: center;
+    font-size: 0;
+    
+    > ul
+    {
+        li
+        {
+            display: inline-block;
+            width: 20%;
+            position: relative;
+            background: map-get($colores-pagina, "principal" );
+
+            a
+            {
+                display: block;
+                text-decoration: none;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                color: map-get($colores-neutros, "negro");
+            }
+
+            &:hover
+            {
+                a
+                {
+                    background: #333333;
+                    border-radius: 2rem;
+                    color: map-get($colores-neutros, "blanco");
+                }
+            }
+        }
+    }
+
+    li
+    {
+        ul
+        {
+            position: absolute;
+            width: 0;
+            overflow: hidden;
+        }
+
+        &:hover
+        {
+            ul
+            {
+                width: 100%;
+                margin: 0 -4rem -4rem -4rem;
+                padding: 0 4rem 4rem 4rem;
+                z-index: 5;
+            }
+        }
+
+        li
+        {
+            display: block;
+            width: 100%;
+        }
+
+        &:hover
+        {
+            li
+            {
+                a
+                {
+                    font-size: 1.5rem;
+                    line-height: 1.7rem;
+                    border-top: 1px solid #e5e5e5;
+                    background: hsla(12, 22%, 26%, 0.46);
+                    padding: .4rem;
+                }
+            }
+        }
+
+        li
+        {
+            a
+            {
+                &:hover
+                {
+                    background: hsla(9, 22%, 18%, 0.542);
+                }
+            }
+        }
+    }
+}

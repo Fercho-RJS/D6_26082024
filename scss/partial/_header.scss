@@ -1,0 +1,26 @@
+.header
+{
+    display: flex;
+    flex-direction: column;
+
+    .encabezado
+    {
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    h1
+    {
+        font-weight: lighter;
+    }
+
+    span
+    {
+        font-weight: bold;
+    }
+}
+
+.wave
+{
+    margin-bottom: -2.8rem;
+}
