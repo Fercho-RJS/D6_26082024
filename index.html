@@ -25,20 +25,20 @@
             <h1><span>Arte</span>Impreso</h1>
 
             <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <li class="nav-item me-5">
+                  <a class="nav-link active text-black" aria-current="page" href="index.html"><b>Inicio</b></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/productos.html">Productos</a>
+                <li class="nav-item me-5">
+                  <a class="nav-link text-black" href="./pages/productos.html">Productos</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/nuestroTrabajo.html">Nuestro trabajo</a>
+                <li class="nav-item me-5">
+                  <a class="nav-link text-black" href="./pages/nuestroTrabajo.html">Nuestro trabajo</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-black" href="./pages/contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/cuenta.html">Mi cuenta</a>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-black" href="./pages/cuenta.html">Mi cuenta</a>
                 </li>
               </ul>
         </header><!-- Mi navbar hecha con bootstrap-->
@@ -60,43 +60,76 @@
         </header> 
         
         -->
+
+        <!-- Mudanza del contenido a bootstrap
         
-        <section class="contenedor"><!-- Seccion 2 -->
+        Se incluyó la propiedad row-col para hacerlo responsive
+        
+        -->
+        <div class="container text-center pt-5">
+            <div class="row align-items-center">
+              <div class="col">
+                <img class="img-fluid" src="./img/Mariposa1.png" alt="Imagen de cuadro de unamariposa">
+              </div>
+              <div class="col ">
+                <h2>Cuadros únicos impresos en 3D!</h2>
+                <p>Dale vida y originalidad a tus espacios, decoralos como mas te gusten usando cuadros impresos en 3D hechos a tu medida.</p>
+                <div class="row justify-content-center">
+                    <a class="boton" href="#">Comprar ahora</a>
+                    <a class="boton" href="#">Ver diseños</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <!-- Section original
+        <section class="contenedor">
             <h2>Cuadros únicos impresos en 3D!</h2>
             <img src="./img/Mariposa1.png" alt="Imagen de cuadro de unamariposa">
             <p>Dale vida y originalidad a tus espacios, decoralos como mas te gusten usando cuadros impresos en 3D hechos a tu medida.</p>
             <a class="boton" href="#">Comprar ahora</a>
             <a class="boton" href="#">Ver diseños</a>
-        </section>
+        </section> 
+        -->
 
-
+        
+        <!-- Ondulación detalle de la página
+        Lo hice img-fluid para que se desplace con los breakpoints de la página, lo hace ver más responsive.
+        -->
         <div class="wave">
-            <img src="./img/wave.svg" alt="">
+            <img class="img-fluid" src="./img/wave.svg" alt="">
         </div>
 
-        <main class="main"> <!-- Seccion 3 -->
-            <div class="contenedor">
+        <div class="text-center pt-5 bg-white pb-5">
+            <div class="row align-items-center">
+              <div class="col">
+                <img class="img-fluid" src="./img/cuadroFlor.png" alt="">
+              </div>
+              <div class="col ">
                 <h2>Decora tu espacio con mucho estilo</h2>
-                <img src="./img/cuadroFlor.png" alt="">
                 <p>Un espacio bien decorado y amigable hace que seamos mucho mas productivos. Qué estas esperando, mira los modelos de cuadros que tenemos y elegi los que mas se adapten a tus gustos.</p>
-                <a class="boton" href="#">Comprar ahora</a>
+                <div class="row justify-content-center">
+                    <a class="boton" href="#">Comprar ahora</a>
+                </div>
+              </div>
             </div>
-        </main>
+        </div>
 
         <footer class="footer"> <!-- Seccion 4 -->
-            <div class="redes">
-                <a href="https://www.facebook.com/Arte-Impreso-101526491482665" target="_blank">
-                    <img src="./img/bxl-facebook.svg" alt="Logo de Facebook">
-                </a>
-                <a href="https://www.instagram.com/artee.impreso/?hl=es-la" target="_blank">
-                    <img src="./img/bxl-instagram.svg" alt="Logo de Instagram">
-                </a>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="https://www.facebook.com/Arte-Impreso-101526491482665" target="_blank">
+                        <img class="img-fluid" src="./img/bxl-facebook.svg" alt="Logo de Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/artee.impreso/?hl=es-la" target="_blank">
+                        <img class="img-fluid" src="./img/bxl-instagram.svg" alt="Logo de Instagram">
+                    </a>
+                </div>
             </div>
-            <div class="texto">
+            <div class="text-center">
                 <p>2021 - Todos los derechos reservados.</p>
             </div>
         </footer>
         
     </body>
-
 </html>
