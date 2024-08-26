@@ -43,7 +43,28 @@
               </ul>
         </header><!-- Mi navbar hecha con bootstrap-->
 
-        <section class="contenedor"> <!-- Seccion 2 -->
+        <div class="container p-5">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                  <input type="text" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="text-center">
+                    <a class="boton" type="submit" href="#">Enviar</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Original
+        <section class="contenedor">
            <h2>Cuenta</h2>
 
             <form action="">
@@ -66,21 +87,25 @@
                     <input class="boton" type="submit" value="Enviar">
                 </fieldset>
             </form>
-        </section>
+        </section> -->
 
-        <footer class="footer"> <!-- Seccion 3 -->
-            <div class="redes">
-                <a href="https://www.facebook.com/Arte-Impreso-101526491482665" target="_blank">
-                    <img src="../img/bxl-facebook.svg" alt="Logo de Facebook">
-                </a>
-                <a href="https://www.instagram.com/artee.impreso/?hl=es-la" target="_blank">
-                    <img src="../img/bxl-instagram.svg" alt="Logo de Instagram">
-                </a>
+        <!-- Mi footer hecho bootstrap -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col text-center">
+                    <a href="https://www.facebook.com/Arte-Impreso-101526491482665" target="_blank">
+                        <img class="img-fluid" src="./img/bxl-facebook.svg" alt="Logo de Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/artee.impreso/?hl=es-la" target="_blank">
+                        <img class="img-fluid" src="./img/bxl-instagram.svg" alt="Logo de Instagram">
+                    </a>
+                </div>
             </div>
-            <div class="texto">
+            <div class="text-center">
                 <p>2021 - Todos los derechos reservados.</p>
             </div>
         </footer>
+        <!-- Mi footer hecho bootstrap -->
 
     </body>
 </html>
