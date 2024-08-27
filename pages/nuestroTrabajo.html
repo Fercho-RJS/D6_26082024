@@ -45,21 +45,51 @@
             </ul>
         </header><!-- Mi navbar hecha con bootstrap-->
 
-        <section class="contenedor"> <!-- Seccion 1 -->
-            <h2>Nuestro Producto</h2>
-            <img width="70%" src="../img/living.jpg" alt="Foto de livig con cuadros impresos en 3D">
+        <section class="container mt-5">
+            <h2 class="m-5">Nuestro Producto</h2>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img-carrusel/carousel1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img-carrusel/carousel2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img-carrusel/carousel3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
 
-        <section class="contenedor"> <!-- Seccion 2 -->
-            <h2>Fabricación</h2>
+        <!-- <section class="contenedor"> 
+            
+            <img width="70%" src="../img/living.jpg" alt="Foto de livig con cuadros impresos en 3D">
+        </section> -->
+
+        <section class="container"> <!-- Seccion 2 -->
+            <h2 class="m-5">Fabricación</h2>
             <p>Todos nuestros cuadros son fabricados en impresoras
                 3D. Están impresas en PLA, un Bio-Plástico derivado de
                 materias primas naturales y ronovables, lo que los
                 convierten en Eco Amigables.</p>
         </section>
 
-        <section class="listas contenedor"> <!-- Seccion 2 -->
-            <h2>Como instalarlo</h2>
+        <section class="listas container"> <!-- Seccion 2 -->
+            <h2 class="m-5">Como instalarlo</h2>
             <p>Sigue estos pasos:</p>
             <ul>
                 <li>Limpiar la zona del donde se pondra el cuadro</li>
@@ -71,8 +101,8 @@
             <p>Información adicional: Los cuadros pesanal rededor de 50 gr y miden 28x28cm.</p>
         </section>
 
-        <section class="contenedor"> <!-- Seccion 2 -->
-            <h2>Advertencia</h2>
+        <section class="container"> <!-- Seccion 2 -->
+            <h2 class="m-5">Advertencia</h2>
             <p>No colocar los cuadros en lugares donde le de sol directamente por periodos prolongados de tiempo. Esto podria hacer que el cuadro se desforme.</p>
         </section>
 
@@ -91,4 +121,6 @@
         </footer>
 
     </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
